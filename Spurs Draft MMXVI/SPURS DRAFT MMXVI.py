@@ -854,236 +854,324 @@ while draft == True:
     # This info was taken from the NBA.
 
     if MT_SAS > MT_BOS:# if the MT of the drafted team has more MT than a given
-        W += 2#          team, then they will add the amount of wins to their
+        W += 2
+        BOS_L = 0       #team, then they will add the amount of wins to their
     elif MT_SAS < MT_BOS:#record that the Spurs played them in 15-16.
         L += 2#          The reverse applies if they're worse.
+        BOS_L = 2
     else:
         W += 1
         L += 1
+        BOS_L = 1
         
     if MT_SAS > MT_BKN:
         W += 2
+        BKN_L = 0
     elif MT_SAS < MT_BKN:
         L += 2
+        BKN_L = 2
     else:
         W += 1
         L += 1
+        BKN_L = 1
         
     if MT_SAS > MT_NYK:
         W += 2
+        NYK_L = 0
     elif MT_SAS < MT_NYK:
         L += 2
+        NYK_L = 2
     else:
         W += 1
         L += 1
+        NYK_L = 1
         
     if MT_SAS > MT_PHI:
         W += 2
+        PHI_L = 0
     elif MT_SAS < MT_PHI:
         L += 2
+        PHI_L = 2
     else:
         W += 1
         L += 1
+        PHI_L = 1
         
     if MT_SAS > MT_TOR:
         W += 2
+        TOR_L = 0
     elif MT_SAS < MT_TOR:
         L += 2
+        TOR_L = 2
     else:
         W += 1
         L += 1
+        TOR_L = 1
         
     if MT_SAS > MT_CHI:
         W += 2
+        CHI_L = 0
     elif MT_SAS < MT_CHI:
         L += 2
+        CHI_L = 2
     else:
         W += 1
         L += 1
+        CHI_L = 1
         
     if MT_SAS > MT_CLE:
         W += 2
+        CLE_L = 0
     elif MT_SAS < MT_CLE:
         L += 2
+        CLE_L = 2
     else:
         W += 1
         L += 1
+        CLE_L = 1
         
     if MT_SAS > MT_DET:
         W += 2
+        DET_L = 0
     elif MT_SAS < MT_DET:
         L += 2
+        DET_L = 2
     else:
         W += 1
         L += 1
+        DET_L = 1
         
     if MT_SAS > MT_IND:
         W += 2
+        IND_L = 0
     elif MT_SAS < MT_IND:
         L += 2
+        IND_L = 2    
     else:
         W += 1
         L += 1
+        IND_L = 1
         
     if MT_SAS > MT_MIL:
         W += 2
+        MIL_L = 0
     elif MT_SAS < MT_MIL:
         L += 2
+        MIL_L = 2
     else:
         W += 1
         L += 1
+        MIL_L = 1
         
     if MT_SAS > MT_ATL:
         W += 2
+        ATL_L = 0
     elif MT_SAS < MT_ATL:
         L += 2
+        ATL_L = 2
     else:
         W += 1
         L += 1
+        ATL_L = 1
 
     if MT_SAS > MT_CHA:
         W += 2
+        CHA_L = 0
     elif MT_SAS < MT_CHA:
         L += 2
+        CHA_L = 2
     else:
         W += 1
         L += 1
+        CHA_L = 1
 
     if MT_SAS > MT_MIA:
         W += 2
+        MIA_L = 0
     elif MT_SAS < MT_MIA:
         L += 2
+        MIA_L = 2
     else:
         W += 1
         L += 1
+        MIA_L = 1
 
     if MT_SAS > MT_ORL:
         W += 2
+        ORL_L = 0
     elif MT_SAS < MT_ORL:
         L += 2
+        ORL_L = 2
     else:
         W += 1
         L += 1
+        ORL_L = 1
 
     if MT_SAS > MT_WAS:
         W += 2
+        WAS_L = 0
     elif MT_SAS < MT_WAS:
         L += 2
+        WAS_L = 2
     else:
         W += 1
         L += 1
+        WAS_L = 1
 
     if MT_SAS > MT_DEN:
         W += 4
+        DEN_L = 0
     elif MT_SAS < MT_DEN:
         L += 4
+        DEN_L = 4
     else:
         W += 2
         L += 2
+        DEN_L = 2
 
     if MT_SAS > MT_MIN:
         W += 3
+        MIN_L = 0
     elif MT_SAS < MT_MIN:
         L += 3
+        MIN_L = 3
     else:
         W += 2
         L += 1
+        MIN_L = 1
 
     if MT_SAS > MT_OKC:
         W += 4
+        OKC_L = 0
     elif MT_SAS < MT_OKC:
         L += 4
+        OKC_L = 4
     else:
         W += 2
         L += 2
+        OCK_L = 2
 
     if MT_SAS > MT_POR:
         W += 3
+        POR_L = 0
     elif MT_SAS < MT_POR:
         L += 3
+        POR_L = 3
     else:
         W += 2
         L += 1
+        POR_L = 1
 
     if MT_SAS > MT_UTA:
         W += 4
+        UTA_L = 0
     elif MT_SAS < MT_UTA:
         L += 4
+        UTA_L = 4
     else:
         W += 2
         L += 2
+        UTA_L = 2
 
     if MT_SAS > MT_GSW:
         W += 4
+        GSW_L = 0
     elif MT_SAS < MT_GSW:
         L += 4
+        GSW_L = 4
     else:
         W += 2
         L += 2
+        GSW_L = 2
 
     if MT_SAS > MT_LAC:
         W += 3
+        LAC_L = 0
     elif MT_SAS < MT_LAC:
         L += 3
+        LAC_L = 3
     else:
         W += 2
         L += 1
+        LAC_L = 1
 
     if MT_SAS > MT_LAL:
         W += 4
+        LAL_L = 0
     elif MT_SAS < MT_LAL:
         L += 4
+        LAL_L = 4
     else:
         W += 2
         L += 2
+        LAL_L = 2
 
     if MT_SAS > MT_PHO:
         W += 4
+        PHO_L = 0
     elif MT_SAS < MT_PHO:
         L += 4
+        PHO_L = 4
     else:
         W += 2
         L += 2
+        PHO_L = 2
 
     if MT_SAS > MT_SAC:
         W += 3
+        SAC_L = 0
     elif MT_SAS < MT_SAC:
         L += 3
+        SAC_L = 3
     else:
         W += 2
         L += 1
+        SAC_L = 1
 
     if MT_SAS > MT_DAL:
         W += 4
+        DAL_L = 0
     elif MT_SAS < MT_DAL:
         L += 4
+        DAL_L = 4
     else:
         W += 2
         L += 2
+        DAL_L = 2
 
     if MT_SAS > MT_HOU:
         W += 4
+        HOU_L = 0
     elif MT_SAS < MT_HOU:
         L += 4
+        HOU_L = 4
     else:
         W += 2
         L += 2
+        HOU_L = 2
 
     if MT_SAS > MT_MEM:
         W += 4
+        MEM_L = 0
     elif MT_SAS < MT_MEM:
         L += 4
+        MEM_L =4
     else:
         W += 2
         L += 2
+        MEM_L = 2
 
     if MT_SAS > MT_NOP:
         W += 4
+        NOP_L = 0
     elif MT_SAS < MT_NOP:
         L += 4
+        NOP_L = 4
     else:
         W += 2
         L += 2
+        NOP_L = 2
+
     print("")
     print("Your record is " + str(W) + "-" + str(L) + ".")
 
